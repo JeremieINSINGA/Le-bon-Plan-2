@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import paris from "../cities/paris";
 
 export default class Navbar extends Component {
   render() {
@@ -30,30 +31,29 @@ export default class Navbar extends Component {
                     </Link>
                   </li>
                 </ul>
-                <li class="nav-item dropdown">
+                <li className="nav-item dropdown">
                   <a
-                    class="nav-link dropdown-toggle"
+                    className="nav-link dropdown-toggle"
                     href="#"
                     id="navbarDropdown"
                     role="button"
                     data-bs-toggle="dropdown"
-                    aria-expanded="false"
                   >
                     Ville
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <li>
-                      <a className="dropdown-item" to="./cities/paris">
+                      <Link className="dropdown-item" to="/paris">
                         Paris
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">
+                      <Link className="dropdown-item" to="/lyon">
                         Lyon
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="#">
+                      <a className="dropdown-item" to="marseille">
                         Marseille
                       </a>
                     </li>
