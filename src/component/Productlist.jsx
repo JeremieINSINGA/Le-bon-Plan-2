@@ -2,6 +2,10 @@ import React, { Component } from "react";
 
 export default class Productlist extends Component {
   render() {
-    return <div></div>;
+    return (
+      <>
+        <h1>Productlist</h1>
+      </>
+    );
   }
 }

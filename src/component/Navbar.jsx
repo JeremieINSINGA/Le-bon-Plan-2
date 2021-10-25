@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import paris from "../cities/paris";
 
 export default class Navbar extends Component {
   render() {
@@ -31,34 +30,35 @@ export default class Navbar extends Component {
                     </Link>
                   </li>
                 </ul>
-                <li className="nav-item dropdown">
-                  <a
-                    className="nav-link dropdown-toggle"
-                    href="#"
-                    id="navbarDropdown"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                  >
-                    Ville
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li>
-                      <Link className="dropdown-item" to="/paris">
-                        Paris
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="dropdown-item" to="/lyon">
-                        Lyon
-                      </Link>
-                    </li>
-                    <li>
-                      <Link className="dropdown-item" to="marseille">
-                        Marseille
-                      </Link>
-                    </li>
-                  </ul>
-                </li>
+                <a
+                  className="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                >
+                  Ville
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <Link className="dropdown-item" to="/products/cities/paris">
+                      Paris
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to="/products/cities/lyon">
+                      Lyon
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      className="dropdown-item"
+                      to="/products/cities/marseille"
+                    >
+                      Marseille
+                    </Link>
+                  </li>
+                </ul>
               </div>
             </div>
           </nav>
