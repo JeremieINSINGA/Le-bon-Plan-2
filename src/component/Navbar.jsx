@@ -39,22 +39,22 @@ export default class Navbar extends Component {
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
-                    Dropdown
+                    Ville
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <li>
-                      <a class="dropdown-item" href="#">
-                        Action
+                      <a className="dropdown-item" to="./cities/paris">
+                        Paris
                       </a>
                     </li>
                     <li>
                       <a class="dropdown-item" href="#">
-                        Another action
+                        Lyon
                       </a>
                     </li>
                     <li>
                       <a class="dropdown-item" href="#">
-                        Something else here
+                        Marseille
                       </a>
                     </li>
                   </ul>
