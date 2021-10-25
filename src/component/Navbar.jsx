@@ -53,9 +53,9 @@ export default class Navbar extends Component {
                       </Link>
                     </li>
                     <li>
-                      <a className="dropdown-item" to="marseille">
+                      <Link className="dropdown-item" to="marseille">
                         Marseille
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </li>
