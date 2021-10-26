@@ -10,7 +10,7 @@ import Lyon from "./cities/lyon";
 import Marseille from "./cities/marseille";
 import Error404 from "./component/error404";
 import Login from "./component/Login";
-
+import Products from "./component/Product/Products";
 
 export default class App extends Component {
   render() {
@@ -24,6 +24,7 @@ export default class App extends Component {
           <Route path="/products/cities/Paris" component={Paris} />
           <Route path="/products/cities/Lyon" component={Lyon} />
           <Route path="/products/cities/Marseille" component={Marseille} />
+          <Route path="/products/items" component={Products} />
           <Route path="*" component={Error404} />
         </Switch>
       </BrowserRouter>
