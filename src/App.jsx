@@ -5,6 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "./component/Navbar";
 import Admin from "./component/Admin";
 import Home from "./component/home";
+import ProductPage from "./component/ProductPage";
 import Paris from "./cities/paris";
 import Lyon from "./cities/lyon";
 import Marseille from "./cities/marseille";
@@ -22,6 +23,7 @@ export default class App extends Component {
                     <Route exact path="/" component={Home} />
                     <Route path="/products/cities/Paris" component={Paris} />
                     <Route path="/products/cities/Lyon" component={Lyon} />
+                    <Route path="/products/product/ProductPage" component={ProductPage} />
                     <Route
                         path="/products/cities/Marseille"
                         component={Marseille}
