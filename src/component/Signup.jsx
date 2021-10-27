@@ -15,8 +15,6 @@ export default class Signup extends Component {
     }
     handleSubmit(e) {
         e.preventDefault();
-        console.log(e.target.avatar.files[0]);
-        const form = e.target;
         const formData = new FormData();
         formData.append("firstName", this.state.firstName);
         formData.append("avatar", this.state.avatar);
@@ -39,7 +37,7 @@ export default class Signup extends Component {
                             }}
                             type="text"
                             className="border border-grey rounded p-2"
-                            id="firstName"
+                            id="first-name"
                             placeholder="First Name"
                             required
                         />
@@ -52,7 +50,7 @@ export default class Signup extends Component {
                             }}
                             type="text"
                             className="border border-grey rounded p-2"
-                            id="lastName"
+                            id="last-name"
                             placeholder="Last Name"
                             required
                         />
