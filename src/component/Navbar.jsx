@@ -32,6 +32,11 @@ export default class Navbar extends Component {
                                             Admin
                                         </Link>
                                     </li>
+                                    <li className="nav-item">
+                                        <Link className="nav-link" to="/Products/items">
+                                            Product
+                                        </Link>
+                                        </li>
                                 </ul>
                                 <a
                                     className="nav-link dropdown-toggle"
