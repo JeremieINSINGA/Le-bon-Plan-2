@@ -72,10 +72,10 @@ export default class Navbar extends Component {
                                 </ul>
                             </div>
 
-                            <Link className="nav-link" to="users/Login">
+                            <Link className="nav-link" to="/Login">
                                 Login
                             </Link>
-                            <Link className="nav-link" to="users/signup">
+                            <Link className="nav-link" to="/signup">
                                 Sign Up
                             </Link>
                         </div>

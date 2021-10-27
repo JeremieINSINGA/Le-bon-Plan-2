@@ -10,6 +10,7 @@ import Lyon from "./cities/lyon";
 import Marseille from "./cities/marseille";
 import Error404 from "./component/error404";
 import Login from "./component/Login";
+import SignUp from "./component/Signup";
 
 export default class App extends Component {
     render() {
@@ -17,8 +18,9 @@ export default class App extends Component {
             <BrowserRouter>
                 <Navbar />
                 <Switch>
-                    <Route exact path="/Admin" component={Admin} />
-                    <Route exact path="/Login" component={Login} />
+                    <Route exact path="/admin" component={Admin} />
+                    <Route exact path="/login" component={Login} />
+                    <Route exact path="/signup" component={SignUp} />
                     <Route exact path="/" component={Home} />
                     <Route path="/products/cities/Paris" component={Paris} />
                     <Route path="/products/cities/Lyon" component={Lyon} />
