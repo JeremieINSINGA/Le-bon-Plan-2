@@ -1,5 +1,7 @@
 const express = require("express");
-
+const multer = require("multer");
+const path = require("path");
+const upload = multer({ dest: path.join(__dirname, "../assets/img/") });
 const {
     signUpUser,
     loginUser,
@@ -9,7 +11,7 @@ const {
 const router = express.Router();
 
 // User Post Routes
-router.post("/signup", signUpUser);
+router.post("/signup", upload.single("avatar"), signUpUser);
 router.post("/login", loginUser);
 
 // User Get Routes

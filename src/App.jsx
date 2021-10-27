@@ -10,27 +10,27 @@ import Lyon from "./cities/lyon";
 import Marseille from "./cities/marseille";
 import Error404 from "./component/error404";
 import Login from "./component/Login";
-import Products from "./component/Product/Products";
+import SignUp from "./component/Signup";
 
 export default class App extends Component {
-  render() {
-    return (
-      <BrowserRouter>
-        <Navbar />
-        <Switch>
-          <Route exact path="/Admin" component={Admin} />
-          <Route exact path="/Login" component={Login} />
-          <Route exact path="/" component={Home} />
-          <Route path="/products/cities/Paris" component={Paris} />
-          <Route path="/products/cities/Lyon" component={Lyon} />
-          <Route path="/products/items">
-            <Products />
-          </Route>
-          ;
-          <Route path="/products/cities/Marseille" component={Marseille} />
-          <Route path="*" component={Error404} />
-        </Switch>
-      </BrowserRouter>
-    );
-  }
+    render() {
+        return (
+            <BrowserRouter>
+                <Navbar />
+                <Switch>
+                    <Route exact path="/admin" component={Admin} />
+                    <Route exact path="/login" component={Login} />
+                    <Route exact path="/signup" component={SignUp} />
+                    <Route exact path="/" component={Home} />
+                    <Route path="/products/cities/Paris" component={Paris} />
+                    <Route path="/products/cities/Lyon" component={Lyon} />
+                    <Route
+                        path="/products/cities/Marseille"
+                        component={Marseille}
+                    />
+                    <Route path="*" component={Error404} />
+                </Switch>
+            </BrowserRouter>
+        );
+    }
 }

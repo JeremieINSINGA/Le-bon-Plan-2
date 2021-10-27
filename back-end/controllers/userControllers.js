@@ -2,21 +2,23 @@ const userModel = require("../models/userModel");
 
 module.exports = {
     signUpUser: async (req, res) => {
-        try {
-            const userData = req.body;
-            const isExist = await userModel.findOne({
-                username: userData.username,
-            });
-            if (isExist) {
-                res.status(400).send({ error: "The user already exist" });
-            } else {
-                console.log(userData);
-                userModel.create(userData).catch(console.error);
-                res.status(200).send("signup successfully");
-            }
-        } catch (error) {
-            res.status(500).send(error);
-        }
+        console.log(req.body);
+        res.send("ok");
+        // try {
+        //     const userData = req.body;
+        //     const isExist = await userModel.findOne({
+        //         username: userData.username,
+        //     });
+        //     if (isExist) {
+        //         res.status(400).send({ error: "The user already exist" });
+        //     } else {
+        //         console.log(userData);
+        //         // userModel.create(userData).catch(console.error);
+        //         res.status(200).send("signup successfully");
+        //     }
+        // } catch (error) {
+        //     res.status(500).send(error);
+        // }
     },
     loginUser: async (req, res) => {
         try {
