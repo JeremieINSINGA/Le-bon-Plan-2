@@ -33,10 +33,13 @@ export default class Navbar extends Component {
                                         </Link>
                                     </li>
                                     <li className="nav-item">
-                                        <Link className="nav-link" to="/Products/items">
+                                        <Link
+                                            className="nav-link"
+                                            to="/Products/items"
+                                        >
                                             Product
                                         </Link>
-                                        </li>
+                                    </li>
                                 </ul>
                                 <a
                                     className="nav-link dropdown-toggle"
@@ -77,7 +80,7 @@ export default class Navbar extends Component {
                                 </ul>
                             </div>
 
-                            <Link className="nav-link" to="/Login">
+                            <Link className="nav-link" to="/login">
                                 Login
                             </Link>
                             <Link className="nav-link" to="/signup">
